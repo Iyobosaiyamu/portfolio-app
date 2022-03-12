@@ -4,4 +4,6 @@
 forever stopall
 # forever start --minUptime 10000 --spinSleepTime 1000 /home/ec2-user/nodejs/app.js
 
-sudo forever start -c "npm start" /home/ubuntu/myportfolio/ --minUptime 100000 --spinSleepTime 10000
+# sudo forever start -c "npm start" /home/ubuntu/myportfolio/ --minUptime 100000 --spinSleepTime 10000
+
+forever start --minUptime 100000 --spinSleepTime 10000 /home/ubuntu/myportfolio/Server/index.js
